@@ -1,0 +1,9 @@
+<!--components/test2/test2.wxml-->
+<!-- <text>components/test2/test2.wxml</text> -->
+<view class="colorBox"
+style="background-color: rgba({{fillColor}});">
+颜色值:{{fillColor}}
+</view>
+<button size="mini" bindtap="addR">R</button>
+<button size="mini" bindtap="addG" type="primary">G</button>
+<button size="mini" bindtap="addB">B</button>

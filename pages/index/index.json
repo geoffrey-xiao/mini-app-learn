@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#00b62a",
+  "navigationBarTitleText": "美团外卖",
+  "backgroundColor": "#ff0000",
+  "enablePullDownRefresh": false
+}

@@ -1,0 +1,79 @@
+<!--pages/list/list.wxml-->
+<!-- <scroll-view class="container1" scroll-y>
+  <view>a</view>
+  <view>b</view>
+  <view>c</view>
+</scroll-view> -->
+<!-- 
+<swiper class="swiper-container" indicator-dots="true" indicator-active-color="white" autoplay="true" interval="2000"
+circular>
+  <swiper-item>
+    <view class="item">a</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">b</view>
+  </swiper-item>
+  <swiper-item>
+    <view class="item">c</view>
+  </swiper-item>
+</swiper> -->
+
+<!-- text和rich-text -->
+
+<!-- <view>
+<text selectable>1111111111</text>
+<rich-text nodes="<h1 style='color:blue;'>title</h1>"></rich-text>
+</view> -->
+
+<!-- <button type="primary"> button</button>
+<button type="warn" size="mini">warn</button>
+<button size="mini">mini</button>
+
+<button type="warn" size="mini" plain>warn</button>
+<button size="mini" plain="true">mini</button> -->
+
+<!-- <image></image> -->
+<!-- <image src="/images/企业微信截图_16613056072497.png" mode="aspectFill"></image> -->
+
+<view>{{title}}</view>
+<!-- <image src="{{imgurl}}"></image> -->
+<view>{{random>5?'大於5':'小於5'}}</view>
+<view>{{count}}</view>
+<button type="primary" bindtap="clickBtn"
+data-info="{{2}}">按鈕</button>
+
+<!-- <input bindinput="inputhandler"
+value="{{msg}}"></input>
+
+<view wx:if="{{type===1}}">男</view>
+<view  wx:elif="{{type===2}}">女</view>
+<view wx:else>未知</view> -->
+
+<!-- <block wx:if="{{type===2}}">
+<view>111</view>
+<view>222</view>
+</block> -->
+
+<!-- <view hidden="{{flag}}" class="red">用hidden显示隐藏</view>
+<view wx:if="{{flag}}">用if显示隐藏</view>
+<view wx:for="{{arr}}" wx:key="index">
+索引是{{index}},item是{{item}}
+</view> -->
+
+<button bindtap="getInfo">发起get请求</button>
+<button bindtap="postInfo">发起post请求</button>
+<navigator url="/pages/index/index" open-type="switchTab">导航到tabbar页面</navigator>
+
+<navigator url='/pages/info/info?name=summer&age=4'>导航到非tabbar页面</navigator>
+
+<button bindtap="goindex">跳转</button>
+<button bindtap="goinfo">跳转</button>
+<my-test max="10"></my-test>
+<view>{{m1.toUpper('summer')}}</view>
+<view>{{m2.toLower('FENGFENG')}}</view>
+<wxs module="m2">
+module.exports.toLower=function(str){
+  return str.toLowerCase()
+}
+</wxs>
+<wxs src="/utils/tools.wxs" module="m1"></wxs>
