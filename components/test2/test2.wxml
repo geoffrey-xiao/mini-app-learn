@@ -7,3 +7,6 @@ style="background-color: rgba({{fillColor}});">
 <button size="mini" bindtap="addR">R</button>
 <button size="mini" bindtap="addG" type="primary">G</button>
 <button size="mini" bindtap="addB">B</button>
+<slot name="test1"></slot>
+<slot name="test2"></slot>
+<view>测试插槽</view>

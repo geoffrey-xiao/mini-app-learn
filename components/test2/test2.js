@@ -27,6 +27,7 @@ Component({
 
   },
 
+
   /**
    * 组件的初始数据
    */
@@ -74,5 +75,8 @@ Component({
         fillColor: obj.r + ',' + obj.g + ',' + obj.b
       })
     }
+  },
+  options: {
+    multipleSlots: true
   }
 })
