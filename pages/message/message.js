@@ -5,7 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
+    count: 10
+  },
+  syncCount(e) {
+    console.log('触发父组件')
+    console.log(e.detail)
+    this.setData({
+      count: e.detail.value
+    })
+  },
 
+  getChild(){
+    const child =this.selectComponent('#test3')
+    console.log(child)
+    child.addCount()
   },
 
   /**

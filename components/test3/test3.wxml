@@ -1,0 +1,6 @@
+<!--components/test3/test3.wxml-->
+<text>子组件的值为{{count}}</text>
+
+<button bindtap="addCount">count+1</button>
+
+<view>behavior的数据是{{test}}</view>

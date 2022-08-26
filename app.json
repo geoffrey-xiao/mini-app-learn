@@ -44,7 +44,8 @@
     ]
   },
   "usingComponents": {
-    "my-test2": "/components/test2/test2"
+    "my-test2": "/components/test2/test2",
+    "my-test3": "/components/test3/test3"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

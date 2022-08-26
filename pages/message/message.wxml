@@ -5,3 +5,11 @@
 <view slot="test1">我是插槽内容1</view>
 <view slot="test2">我是插槽内容2</view>
 </my-test2>
+
+
+<my-test3 count="{{count}}" bind:sync="syncCount" id="test3"></my-test3>
+
+<view>--------</view>
+
+<view>父组件的值为:{{count}}</view>
+<button bindtap="getChild">获取子组件</button>
