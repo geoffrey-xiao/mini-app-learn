@@ -5,7 +5,8 @@
     "pages/logs/logs",
     "pages/info/info",
     "pages/contact/contact",
-    "pages/message/message"
+    "pages/message/message",
+    "pages/store/store"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -40,13 +41,20 @@
         "text": "message",
         "iconPath": "/images/tabs/contact.png",
         "selectedIconPath": "/images/tabs/contact-active.png"
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "store",
+        "iconPath": "/images/tabs/contact.png",
+        "selectedIconPath": "/images/tabs/contact-active.png"
       }
     ]
   },
   "usingComponents": {
     "my-test2": "/components/test2/test2",
     "my-test3": "/components/test3/test3",
-    "van-button":"@vant/weapp/button/index"
+    "van-button":"@vant/weapp/button/index",
+    "my-numbers":"/components/numbers/numbers"
   },
   "sitemapLocation": "sitemap.json"
 }

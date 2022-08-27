@@ -1,0 +1,10 @@
+<!--pages/store/store.wxml-->
+<text>pages/store/store.wxml</text>
+
+<view>{{num1}}+ {{num2}} = {{count}}</view>
+
+<van-button bindtap="dealNum" data-set="{{1}}" type="primary">num1 +1</van-button>
+
+<van-button bindtap="dealNum" data-set="{{-1}}" type="primary">num1 -1</van-button>
+
+<my-numbers></my-numbers>
