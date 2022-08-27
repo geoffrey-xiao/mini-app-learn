@@ -29,18 +29,19 @@ Page({
     })
   },
 
-  getInfo() {
-    wx.request({
+  async getInfo() {
+    const res = await wx.p.request({
       url: 'https://www.escook.cn/api/get',
       method: 'GET',
       data: {
         name: 'summer',
         age: 4
       },
-      success: (res) => {
-        console.log(res.data)
-      }
+      // success: (res) => {
+      //   console.log(res.data)
+      // }
     })
+    console.log(res)
   },
 
   postInfo() {

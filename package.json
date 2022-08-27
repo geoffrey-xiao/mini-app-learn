@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@vant/weapp": "^1.10.4"
+    "@vant/weapp": "^1.10.4",
+    "miniprogram-api-promise": "^1.0.4"
   }
 }
