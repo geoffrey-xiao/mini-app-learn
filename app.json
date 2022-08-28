@@ -17,6 +17,30 @@
     "backgroundColor": "#efefef",
     "onReachBottomDistance": 100
   },
+  "preloadRule": {
+    "pages/message/message":{
+      "packages": ["p1"],
+      "network": "all"
+    }
+  },
+  "subPackages": [
+    {
+      "root": "packageA",
+      "name": "p1",
+      "pages": [
+        "pages/cat/cat",
+        "pages/dog/dog"
+      ]
+    },{
+      "root": "packageB",
+      "name": "p2",
+      "pages": [
+        "pages/apple/apple",
+        "pages/banana/banana"
+      ],
+      "independent": true
+    }
+  ],
   "tabBar": {
     "list": [{
         "pagePath": "pages/list/list",
