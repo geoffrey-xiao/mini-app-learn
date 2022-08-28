@@ -3,6 +3,7 @@ import { observable, action } from 'mobx-miniprogram';
 export const store = observable({
   num1: 1,
   num2: 2,
+  active: 0,
   get count() {
     return this.num1 + this.num2
   },
@@ -12,4 +13,7 @@ export const store = observable({
   addNum2: action(function (step) {
     this.num2 += step
   }),
+  updateActive: action(function (step) {
+    this.active = step
+  })
 })

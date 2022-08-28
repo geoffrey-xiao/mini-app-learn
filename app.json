@@ -42,6 +42,7 @@
     }
   ],
   "tabBar": {
+    "custom": true,
     "list": [{
         "pagePath": "pages/list/list",
         "text": "index",
@@ -78,6 +79,8 @@
     "my-test2": "/components/test2/test2",
     "my-test3": "/components/test3/test3",
     "van-button":"@vant/weapp/button/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
     "my-numbers":"/components/numbers/numbers"
   },
   "sitemapLocation": "sitemap.json"

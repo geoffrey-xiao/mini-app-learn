@@ -49,9 +49,9 @@ swiper-item:nth-child(3) .item{
   background-color: lightblue;
 }
 
-image{
+/* image{
   border: 1px solid red;
-}
+} */
 
 input{
   border:1px solid #eee;
@@ -59,10 +59,10 @@ input{
   padding:5px; 
 }
 
-view{
+/* view{
   background-color: pink;
-}
+} */
 
-view:nth-child(1){
+/* view:nth-child(1){
   background-color: lightblue;
-}
+} */
